@@ -62,7 +62,8 @@ def main():
     app = QApplication(sys.argv)
     app.setOrganizationName("ReText project")
     app.setApplicationName("ReText")
-    app.setApplicationDisplayName("ReText")
+    # 🧠🌸 in every window title: this is the miadisabelle/mia-retext build.
+    app.setApplicationDisplayName("ReText 🧠🌸")
     app.setApplicationVersion(app_version)
     app.setOrganizationDomain('mitya57.me')
     app.setDesktopFileName('me.mitya57.ReText')
