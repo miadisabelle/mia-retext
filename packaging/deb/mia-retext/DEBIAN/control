@@ -1,0 +1,22 @@
+Package: mia-retext
+Version: 8.1.0-mia1
+Section: editors
+Priority: optional
+Architecture: amd64
+Depends: python3 (>= 3.10), python3-venv, libegl1, libgl1, libfontconfig1, libfreetype6, libdbus-1-3, libglib2.0-0, libx11-6, libx11-xcb1, libxkbcommon0, libxkbcommon-x11-0, libxcb1, libxcb-cursor0, libxcb-icccm4, libxcb-image0, libxcb-keysyms1, libxcb-randr0, libxcb-render-util0, libxcb-shape0, libxcb-xinerama0, libxcb-xkb1
+Recommends: libenchant-2-2
+Provides: retext
+Conflicts: retext
+Replaces: retext
+Maintainer: Miadi <mia@jgwill.com>
+Homepage: https://github.com/miadisabelle/mia-retext
+Description: ReText, Markdown and reStructuredText editor, from the miadisabelle fork
+ The ReText of github.com/miadisabelle/mia-retext, in place of the
+ distribution's retext package (Ubuntu 22.04 ships 7.2.3 on PyQt5).
+ /usr/bin/retext runs it from its own venv, /usr/lib/mia-retext/venv,
+ built at install from the wheels this package carries: PyQt6, Markups,
+ Markdown, docutils, Pygments, pyenchant and chardet, never from PyPI and
+ never the distribution's. A new python3 rebuilds the venv.
+ .
+ Spell checking needs libenchant-2-2 and a dictionary. The WebEngine
+ preview is not included.
